@@ -50,7 +50,7 @@ where:
 + <strong>options</strong>: is a key-value object containing your setup, omit it to use defaults
 
 <div><p>Job done!</div>
-<div><p>See it in action <a href='http://wiredolphin.net'>here</a></p></div>
+<div><p>See it in action <a href='https://wiredolphin.github.io/emphasizer/index.html'>here</a></p></div>
 
 ## License
 
