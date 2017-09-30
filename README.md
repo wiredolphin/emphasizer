@@ -44,6 +44,7 @@ Emphasizer like so:</p></div>
 </div>
 <br>
 where:
+
 + <strong>selector</strong>: is the selector string referencing the html element containing the source code
 + <strong>programming-languages</strong>: is a comma separated string containing one or multiple programming languages, emphasizer automatically loads the necessary files
 + <strong>options</strong>: is a key-value object containing your setup, omit it to use defaults
