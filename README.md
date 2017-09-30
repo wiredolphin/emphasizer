@@ -1,4 +1,4 @@
-<a href="http://emphasizer.net"><img width="200px" alt="emp logo not found" src="https://github.com/wiredolphin/emphasizer/blob/master/images/emphasizer_logo_01.png" /></a>
+<a href=""><img width="200px" alt="emp logo not found" src="https://github.com/wiredolphin/emphasizer/blob/master/images/emphasizer_logo_01.png" /></a>
 
 # Emphasizer
 <p>Smart, modern, quick configurable and high customizable source code syntax highlighter for the web, written in pure Javascript!<p>
