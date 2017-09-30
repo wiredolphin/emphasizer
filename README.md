@@ -53,3 +53,5 @@ where:
 <div><p>See it in action <a href='http://wiredolphin.net'>here</a></p></div>
 
 ## License
+
+See <a href="https://github.com/wiredolphin/emphasizer/blob/master/license">here</a>
