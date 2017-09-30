@@ -1,0 +1,152 @@
+/*
+*	Emphasizer - Smart source code syntax highlighter
+*	For more info visit http://emphasizer.net
+*	File: emp-midnight.css
+*
+*	Version 0.1 (November 2015)
+*   Copyright (C) 2015  vincent@wiredolphin.net
+*
+*   This program is free software: you can redistribute it and/or modify
+*	it under the terms of the GNU General Public License as published by
+*	the Free Software Foundation, either version 3 of the License, or
+*	(at your option) any later version.
+*
+*	This program is distributed in the hope that it will be useful,
+*	but WITHOUT ANY WARRANTY; without even the implied warranty of
+*	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*	GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU General Public License
+*	along with Emphasizer.  If not, see <http://www.gnu.org/licenses/>.
+*
+*	If you like this software and you find it useful, please make 
+*	a donation and encourages the development of Emphasizer
+*/
+
+/*********************************
+*	Emphasizer Midnight Theme
+**********************************/
+
+.emp-midnight .emp-ruler > .emp-ruler-line {
+	color: #2ceba3;
+}
+
+/* midnight common rules */
+.emp-midnight .plain { color: #ffffff; }
+.emp-midnight .comment { color: #35C483; }
+.emp-midnight .operator,
+.emp-midnight .parenthesis { color: #999999; }
+.emp-midnight .regexp,
+.emp-midnight .formatSpecifier,
+.emp-midnight .backtick,
+.emp-midnight .string { color: #FF617B; }
+.emp-midnight .escapeChar { color: #008B48; }
+.emp-midnight .literal { color: #7F87F8; font-weight: bold; }
+.emp-midnight .directive,
+.emp-midnight .className,
+.emp-midnight .cssClass,
+.emp-midnight .cssId,
+.emp-midnight .unit,
+.emp-midnight .attributeSelector,
+.emp-midnight .pseudoClass,
+.emp-midnight .object,
+.emp-midnight .globalObject,
+.emp-midnight .statement { color: #F16EC5; }
+.emp-midnight .modifier,
+.emp-midnight .keyword,
+.emp-midnight .primitive,
+.emp-midnight .typeModifier,
+.emp-midnight .digit { color: #37A1FF; }
+.emp-midnight .argument,
+.emp-midnight .macro,
+.emp-midnight .method { color: #009596; font-style: italic; }
+.emp-midnight .fullClassName,
+.emp-midnight .type { color: #438aff; }
+.emp-midnight .constant { color: #b80000; }
+.emp-midnight .className,
+.emp-midnight .specialOperator,
+.emp-midnight .statement { color: #ba1197; }
+
+/* background */
+.emp-midnight .emp-highlighted div code .plain { color: #444444 !important; }
+.emp-midnight .emp-highlighted { background-color: #2ceba3 !important; color: #444444 !important; }
+
+/* lines highlight */
+.emp-midnight .emp-code-wrapper,
+.emp-midnight .emp-alt .emp-even,
+.emp-midnight .emp-alt .emp-odd { background-color: #404040; }
+
+/* midnight for java */
+.emp-midnight .emp-java .modifier,
+.emp-midnight .emp-java .fqcn,
+.emp-midnight .emp-java .keyword { color: #5c3eff; }
+.emp-midnight .emp-java .keywordValue { color: #5C3EFF; font-weight: bold; }
+.emp-midnight .emp-java .directive,
+.emp-midnight .emp-java .statement,
+.emp-midnight .emp-java .keywordSpecial { color: #41e4ff; }
+.emp-midnight .emp-java .primitive,
+.emp-midnight .emp-java .digit { color: #2EC6FF; }
+.emp-midnight .emp-java .type { color: #F16EC5; }
+
+/* midnight for css */
+.emp-midnight .emp-css .properties { color: #5d62e3; }
+.emp-midnight .emp-css .digit { color: #FFF297; }
+.emp-midnight .emp-css .value,
+.emp-midnight .emp-css .font,
+.emp-midnight .emp-css .color { color: #079f00; font-weight: bold; }
+.emp-midnight .emp-css .pseudoClass { font-style: italic; }
+.emp-midnight .emp-css .vendorPrefix { color: #333333; font-style: italic; }
+.emp-midnight .emp-css .colorHex { color: #ee0000; }
+
+/* midnight for javascript */
+.emp-midnight .emp-javascript .keywordSpecial { color: #41e4ff; }
+.emp-midnight .emp-javascript .objectHierarchy,
+.emp-midnight .emp-javascript .BOM { color: #6469f4; font-weight: bold; }
+.emp-midnight .emp-javascript .DOM,
+.emp-midnight .emp-javascript .eventHandler,
+.emp-midnight .emp-javascript .cssProperty,
+.emp-midnight .emp-javascript .property { color: #07a600; font-weight: bold; }
+.emp-midnight .emp-javascript .literal { color: #4337f8; font-weight: bold; }
+.emp-midnight .emp-javascript .operator { color: #888888; }
+.emp-midnight .emp-javascript .specialOperator { color: #aaaaaa; font-style: italic; }
+
+/* midnight for sql */
+.emp-midnight .emp-sql .functions { color: #009f0f; }
+.emp-midnight .emp-sql .keyword { color: #00c79f; }
+.emp-midnight .emp-sql .dataType { color: #3457ff; }
+.emp-midnight .emp-sql .engine { color: #ffbb52; }
+.emp-midnight .emp-sql .parenthesis { color: #8ba0b0; }
+
+/* midnight for html, xhtm, xml */
+.emp-midnight .emp-xhtml .tag { color: #62C1FB; }
+.emp-midnight .emp-xhtml .quote { color: #ffffff !important; }
+.emp-midnight .emp-xhtml .specialTag { color: #707070; }
+.emp-midnight .emp-xhtml .attribute { color: #F16EC5; font-style: italic; }
+.emp-midnight .emp-xhtml .operator { color: #ffffff; }
+
+/* midnight for php */
+.emp-midnight .emp-php .variable { color: #0FEDFE; }
+.emp-midnight .emp-php .heredoc { color: #009f0f; }
+.emp-midnight .emp-php .reservedConstant,
+.emp-midnight .emp-php .reservedMethod { color: #666666; }
+
+/* midnight for cpp */
+.emp-midnight .emp-cpp .type { color: #000000; }
+.emp-midnight .emp-cpp .hash { color: #009f0f; }
+.emp-midnight .emp-cpp .directive { color: #0D470B; font-weight: bold; }
+.emp-midnight .emp-cpp .libraryFunction { color: #666666; }
+.emp-midnight .emp-cpp .header { color: #ff0000; }
+.emp-midnight .emp-cpp .formatSpecifier { color: #AF1600; }
+.emp-midnight .emp-cpp .property { color: #00D8FF; }
+.emp-midnight .emp-cpp .macroValue { color: #2F930A; }
+
+/* midnight for bash */
+.emp-midnight .emp-bash .shebang { color: #888888; font-style: italic }
+.emp-midnight .emp-bash .variable { color: #00D8FF; }
+.emp-midnight .emp-bash .flag,
+.emp-midnight .emp-bash .builtInCommand { color: #888888; }
+.emp-midnight .emp-bash .operator,
+.emp-midnight .emp-bash .parenthesis { color: #666666; }
+
+
+

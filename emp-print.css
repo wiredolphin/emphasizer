@@ -1,0 +1,65 @@
+/*
+*	Emphasizer - Smart source code syntax highlighter
+*	For more info visit http://emphasizer.net
+*	File: emp-print.css
+*
+*	Version 0.1 (November 2015)
+*   Copyright (C) 2015  vincent@wiredolphin.net
+*
+*   This program is free software: you can redistribute it and/or modify
+*	it under the terms of the GNU General Public License as published by
+*	the Free Software Foundation, either version 3 of the License, or
+*	(at your option) any later version.
+*
+*	This program is distributed in the hope that it will be useful,
+*	but WITHOUT ANY WARRANTY; without even the implied warranty of
+*	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*	GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU General Public License
+*	along with Emphasizer.  If not, see <http://www.gnu.org/licenses/>.
+*
+*	If you like this software and you find it useful, please make 
+*	a donation and encourages the development of Emphasizer
+*/
+
+/**********************************
+*	Styles for printing only
+***********************************/
+body > * {
+	display: none !important;
+}
+body {
+	margin: 0 0 0 0 !important;
+}
+.emp-print-wrapper {
+	position: relative;
+	display: block !important;
+	width: 100%;
+	height: 100%;
+	font-family: 'courier new', monospace !important; 
+	font-size: .9em;
+}
+.emp-print-wrapper ol > li {
+	position: relative;
+	display: table;
+	table-layout:fixed;
+	min-height: 22px !important;
+	width: 100%;
+}
+.emp-print-wrapper .emp-code-line,
+.emp-print-wrapper .emp-ruler-line {
+	display: table-cell;
+	line-height: 22px !important;
+}
+.emp-print-wrapper .emp-code-line {	
+	width: 100%;
+	white-space: pre-wrap !important;
+	padding-left: 8px;
+}
+.emp-print-wrapper .emp-ruler-line {
+	width: 50px;
+	text-align: right;
+	padding-right: 8px;
+	border-right: 1px solid #ddd;
+}

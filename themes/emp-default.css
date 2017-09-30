@@ -1,0 +1,151 @@
+
+/*
+*	Emphasizer - Smart source code syntax highlighter
+*	For more info visit http://emphasizer.net
+*	File: emp-default.css
+*
+*	Version 0.1 (November 2015)
+*   Copyright (C) 2015  vincent@wiredolphin.net
+*
+*   This program is free software: you can redistribute it and/or modify
+*	it under the terms of the GNU General Public License as published by
+*	the Free Software Foundation, either version 3 of the License, or
+*	(at your option) any later version.
+*
+*	This program is distributed in the hope that it will be useful,
+*	but WITHOUT ANY WARRANTY; without even the implied warranty of
+*	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*	GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU General Public License
+*	along with Emphasizer.  If not, see <http://www.gnu.org/licenses/>.
+*
+*	If you like this software and you find it useful, please make 
+*	a donation and encourages the development of Emphasizer
+*/
+
+/*********************************
+*	Emphasizer Default Theme
+**********************************/
+
+/* default common rules */
+.emp-default .plain { color: #111111; }
+.emp-default .comment { color: #009f0f; }
+.emp-default .operator,
+.emp-default .parenthesis { color: #444444; }
+.emp-default .regexp,
+.emp-default .formatSpecifier,
+.emp-default .backtick,
+.emp-default .string { color: #ff0000; }
+.emp-default .escapeChar { color: #22c000; }
+.emp-default .literal { color: #7F87F8; font-weight: bold; }
+.emp-default .directive,
+.emp-default .className,
+.emp-default .cssClass,
+.emp-default .cssId,
+.emp-default .unit,
+.emp-default .attributeSelector,
+.emp-default .pseudoClass,
+.emp-default .object,
+.emp-default .globalObject,
+.emp-default .statement { color: #97009a; }
+.emp-default .modifier,
+.emp-default .keyword,
+.emp-default .primitive,
+.emp-default .typeModifier,
+.emp-default .digit { color: #0000ff; }
+.emp-default .argument,
+.emp-default .macro,
+.emp-default .method { color: #009596; font-style: italic; }
+.emp-default .fullClassName,
+.emp-default .type { color: #438aff; }
+.emp-default .constant { color: #b80000; }
+.emp-default .className,
+.emp-default .specialOperator,
+.emp-default .statement { color: #ba1197; }
+.emp-default .specialTag { color: #707070; }
+
+/* background */
+.emp-default .emp-highlighted div code { color: #000 !important; }
+.emp-default .emp-highlighted { background-color: #d9dfed !important; }
+
+/* lines highlight */
+.emp-default .emp-alt .emp-even { background-color: #f3f3f3; }
+.emp-default .emp-alt .emp-odd { background-color: #ffffff; }
+
+/* default for java */
+.emp-default .emp-java .modifier,
+.emp-default .emp-java .primitive,
+.emp-default .emp-java .digit,
+.emp-default .emp-java .type,
+.emp-default .emp-java .fqcn,
+.emp-default .emp-java .keyword { color: #0000FF; }
+.emp-default .emp-java .keywordValue { color: #5C3EFF; font-weight: bold; }
+.emp-default .emp-java .directive,
+.emp-default .emp-java .statement,
+.emp-default .emp-java .keywordSpecial { color: #BA1197; }
+
+/* default for css */
+.emp-default .emp-css .properties { color: #5d62e3; font-weight: bold; }
+.emp-default .emp-css .digit { color: #0000ff; }
+.emp-default .emp-css .value,
+.emp-default .emp-css .font,
+.emp-default .emp-css .color { color: #079f00; font-weight: bold; }
+.emp-default .emp-css .pseudoClass { font-style: italic; }
+.emp-default .emp-css .vendorPrefix { color: #333333; font-style: italic; }
+.emp-default .emp-css .colorHex { color: #ee0000; }
+ 
+/* default for javascript */
+.emp-default .emp-javascript .keywordSpecial { color: #41e4ff; }
+.emp-default .emp-javascript .objectHierarchy,
+.emp-default .emp-javascript .BOM { color: #6469f4; font-weight: bold; }
+.emp-default .emp-javascript .DOM,
+.emp-default .emp-javascript .eventHandler,
+.emp-default .emp-javascript .cssProperty,
+.emp-default .emp-javascript .property { color: #07a600; font-weight: bold; }
+.emp-default .emp-javascript .literal { color: #4337f8; font-weight: bold; }
+.emp-default .emp-javascript .operator { color: #888888; }
+.emp-default .emp-javascript .specialOperator { color: #999999; font-style: italic; }
+
+/* default for sql */
+.emp-default .emp-sql .functions { color: #009f0f; }
+.emp-default .emp-sql .keyword { color: #00c79f; }
+.emp-default .emp-sql .dataType { color: #3457ff; }
+.emp-default .emp-sql .engine { color: #ffbb52; }
+.emp-default .emp-sql .parenthesis { color: #8ba0b0; }
+
+/* default for html, xhtm, xml */
+.emp-default .emp-xhtml .tag { color: #0158ff; }
+.emp-default .emp-xhtml .attribute { color: #89008c; font-style: italic; }
+
+/* default for php */
+.emp-default .emp-php .variable { color: #0FEDFE; }
+.emp-default .emp-php .heredoc { color: #009f0f; }
+.emp-default .emp-php .reservedConstant,
+.emp-default .emp-php .reservedMethod { color: #666666; }
+
+/* default for cpp */
+.emp-default .emp-cpp .type { color: #000000; }
+.emp-default .emp-cpp .hash { color: #009f0f; }
+.emp-default .emp-cpp .directive { color: #0D470B; font-weight: bold; }
+.emp-default .emp-cpp .libraryFunction { color: #666666; }
+.emp-default .emp-cpp .header { color: #ff0000; }
+.emp-default .emp-cpp .formatSpecifier { color: #AF1600; }
+.emp-default .emp-cpp .property { color: #00D8FF; }
+.emp-default .emp-cpp .macroValue { color: #2F930A; }
+
+/* default for bash */
+.emp-default .emp-bash .shebang { color: #888888; font-style: italic }
+.emp-default .emp-bash .variable { color: #00D8FF; }
+.emp-default .emp-bash .flag,
+.emp-default .emp-bash .builtInCommand { color: #444444; }
+.emp-default .emp-bash .operator,
+.emp-default .emp-bash .parenthesis { color: #666666; }
+
+
+
+
+
+
+
+

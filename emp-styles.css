@@ -1,0 +1,467 @@
+/*
+*	Emphasizer - Smart source code syntax highlighter
+*	For more info visit http://emphasizer.net
+*	File: emp-styles.css
+*
+*	Version 0.1 (November 2015)
+*   Copyright (C) 2015  vincent@wiredolphin.net
+*
+*   This program is free software: you can redistribute it and/or modify
+*	it under the terms of the GNU General Public License as published by
+*	the Free Software Foundation, either version 3 of the License, or
+*	(at your option) any later version.
+*
+*	This program is distributed in the hope that it will be useful,
+*	but WITHOUT ANY WARRANTY; without even the implied warranty of
+*	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*	GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU General Public License
+*	along with Emphasizer.  If not, see <http://www.gnu.org/licenses/>.
+*
+*	If you like this software and you find it useful, please make 
+*	a donation and encourages the development of Emphasizer
+*/
+
+/*********************************
+*	Emphasizer core styles
+**********************************/
+
+.emp-main-container code,
+.emp-plain-text-dialog textarea, 
+.emp-main-container .emp-code-line,
+.emp-main-container .emp-ruler-line,
+.emp-toggle-container,
+.emp-tb-filename{
+	font-size: 1em;
+	font-family: 'courier new', monospace !important; 
+}
+
+.emp-main-container,
+.emp-core-container,
+.emp-code-wrapper,
+.emp-code-wrapper > pre,
+.emp-code-wrapper > pre > ol,
+.emp-code-line { 
+	display: block; 
+	margin: 0; 
+	padding: 0;
+}
+
+.emp-wrapper,
+.emp-main-container,
+.emp-code-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.emp-main-container,
+.emp-core-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.emp-code-wrapper {
+	overflow: auto;
+}
+.emp-code-wrapper > pre { 
+	white-space: pre;
+}
+.emp-code-wrapper > pre > ol { 
+	list-style-type: none;
+}
+
+.emp-ruler {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50px;
+}
+.emp-ruler > .emp-ruler-line {
+	width: 100%;
+	min-height: 25px;
+	line-height: 25px;
+	padding: 0 8px 0 0;	
+	text-align: right;
+	color: #909090;
+	font-size: .9em;
+	border-right: 3px solid #2ceba3;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+
+.emp-code-line {
+	position: relative;
+	min-height: 25px;
+	line-height: 25px;
+}
+
+.emp-main-container.emp-ruler-on .emp-code-line {
+	margin-left: 55px !important;
+}
+
+.emp-layout-anchored .emp-code-line,
+.emp-layout-default .emp-code-line {
+	height: 25px;	
+	margin-left: 8px;
+}
+
+/*
+*	Common rules
+*/
+.emp-layout-default .emp-background,
+.emp-layout-break-lines .emp-background,
+.emp-layout-anchored .emp-background {
+	padding-right: 20px;
+}
+.emp-code-wrapper {
+	margin-bottom: -20px; 
+	padding-bottom: 20px;
+}
+.emp-background,
+.emp-background > ol {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.emp-background {
+	position: relative;
+	overflow-y: auto;
+	z-index: 1000;
+}
+
+/* 
+*	Break lines mode rules 
+*/
+.emp-layout-break-lines .emp-code-line {
+	/*height: 100%;
+	min-height: 25px;*/
+	white-space: pre-wrap !important;
+	position: relative;
+}
+.emp-layout-break-lines .emp-code-wrapper {
+	overflow-x: hidden !important;
+	
+}
+.emp-layout-break-lines .emp-code-wrapper > pre > ol > li { 
+	position: relative; 
+}
+
+/* 
+*	Anchored ruler mode rules 
+*/
+.emp-layout-anchored > .emp-background > ol {
+	position: absolute;
+	list-style-type: none;
+}
+.emp-layout-anchored > .emp-background > ol > li {
+	height: 25px;
+	display: block;
+}
+.emp-layout-anchored .emp-code-wrapper { 
+	overflow-x: auto !important; 
+}
+
+/* 
+*	default mode rules 
+*/
+.emp-layout-default .emp-background > ol {
+	position: absolute;
+	list-style-type: none;
+}
+.emp-layout-default .emp-background > ol > li {
+	height: 25px;
+	width: 100%;
+	display: block;
+}
+.emp-layout-default .emp-code-wrapper { 
+	overflow-x: auto !important; 
+}
+
+/* 
+*	Scrollbars rules 
+*/
+.emp-scrollbar {
+	display: block;
+	border: 1px solid #606060;
+	-moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    padding: 1px;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	opacity: .4;
+  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; 	
+}
+.emp-scrollbar > .emp-scrollbar-thumb {
+	background-color: #202020;
+	position: relative;
+	-moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    -ms-filter: inherit;
+}
+.emp-scrollbar-active,
+.emp-scrollbar:hover {
+	opacity: .6 !important;
+}
+.emp-scrollbar-horizontal {
+	width: 100%;
+	height: 12px;
+	margin-top: 2px;
+	position: relative;
+	z-index: 1000;
+}
+.emp-scrollbar-horizontal > div {
+	height: 8px;
+}
+.emp-scrollbar-vertical {
+	height: 100%;
+	width: 12px;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 100%;
+	margin-left: 2px;
+
+}
+.emp-scrollbar-vertical > div {
+	width: 8px;
+}
+
+/* 
+*	toolbar rules 
+*/
+.emp-tb-wrapper {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 20px;
+	margin-top: -20px;
+}
+.emp-tb-wrapper .emp-tb-filename {
+	display: block;
+	float: left;
+	height: 100%;
+	width: 300px;
+	line-height: 20px;
+	font-size: .8em;
+	color: #555;
+}
+.emp-tb-wrapper .emp-tb-buttons {
+	display: block;
+	float: right;
+	margin-top: 5px;
+	height: 14px;
+	width: 220px;
+}
+.emp-tb-wrapper input[type='button'] {
+	background-color: #bbb;
+	-moz-border-top-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    -khtml-border-top-left-radius: 2px;
+    border-top-left-radius: 2px;
+    -moz-border-top-right-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -khtml-border-top-right-radius: 2px;
+    border-top-right-radius: 2px;
+    color: #505050;
+    border: none;  
+    height: 14px;
+    display: block;
+    float: right;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 100;
+    font-family: Helvetica;
+    cursor: pointer;
+    border-bottom: 1px solid #d5d5d5;
+    margin-left: 1px;
+    padding: 0 5px;
+}
+.emp-tb-wrapper input[value='?'] { width: 20px; } 
+.emp-tb-wrapper input[type='button']:hover { background-color: #ccc; }
+
+/* shoul be theme dependent */
+.emp-toggle-container {
+	margin: 0;
+	padding:0;
+	background-color: #ffffff !important;
+}
+.emp-toggle-plain .emp-code-block > span {
+	color: black !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+}
+.emp-toggle-plain ol li {
+	background-color: white !important;
+}
+.emp-toggle-container pre {
+	line-height: 25px;
+	font-size: 1em;
+}
+
+/* 
+*	Modal dialog rules 
+*/
+.emp-modal-overlay {
+	background-color: rgba(10,10,10, 0);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	/* IE < 8 */
+	background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMwNjcgNzkuMTU3NzQ3LCAyMDE1LzAzLzMwLTIzOjQwOjQyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDMkRCNkY3OTMwM0MxMUU1QTI1OEM3QjY4RDU2NEI3NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDMkRCNkY3QTMwM0MxMUU1QTI1OEM3QjY4RDU2NEI3NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkMyREI2Rjc3MzAzQzExRTVBMjU4QzdCNjhENTY0Qjc3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkMyREI2Rjc4MzAzQzExRTVBMjU4QzdCNjhENTY0Qjc3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAQAAAAAsAAAAAAEAAQAAAgJEAQA7');
+}
+
+.emp-unselectable {
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.emp-blur-element {
+	-webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    /* use SVG for older version of FF (31.0) */
+    filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='svgBlur'><feGaussianBlur in='SourceGraphic' stdDeviation='1'/></filter></svg>#svgBlur");
+    filter: blur(1px);
+    opacity: 0.6;
+}
+.emp-darken-overlay {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60707070, endColorstr=#60707070);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#60707070, endColorstr=#60707070)";
+	background-color: rgba(70,70,70,0.6);
+}
+
+.emp-modal {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	padding: 0;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+	background-color: #fafafa;
+	font-family: Verdana;
+    border: 1px solid #999;
+}
+.emp-modal .emp-modal-bar {
+	width: 100%;
+	height: 24px;
+	line-height: 20px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #555;
+	background-color: #606060;
+	cursor: move;
+	-moz-border-top-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    -khtml-border-top-left-radius: 2px;
+    border-top-left-radius: 2px;/**/
+    -moz-border-top-right-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -khtml-border-top-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.emp-modal .emp-modal-container {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	
+}
+.emp-modal .emp-modal-msg {
+	width: 100%;
+	height: 50px;
+	line-height: 40px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #555;
+}
+.emp-modal .emp-modal-auth {
+	width: 100%;
+	height: 20px;
+	font-size: .8em;
+	color: #47a5ff;
+}
+.emp-modal .emp-modal-auth > span {
+	color: #555;
+}
+.emp-modal button {
+	width: 90px;
+	height: 24px;
+	background-color: #555;
+	margin: 20px auto;
+	display: block;
+	color: #fff !important;
+	border: none;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    cursor: pointer;
+}
+
+.emp-plain-text-dialog {
+	background-color: #ffffff !important;
+}
+
+.emp-plain-text-dialog .emp-scrollbar {
+	margin-left: -12px !important;
+}
+
+.emp-plain-container {
+	position: relative;
+	overflow: hidden;   
+    text-align: left;   
+    height: 420px;
+    font-size: .8em;
+    line-height: 1.4em;
+    background-color: #fff;
+    width: 96%;
+    margin: 30px auto 20px;
+}
+
+textarea.emp-plain-code {
+	position: relative;
+	width: 100%;
+	height: 100%;	
+	overflow-y: auto !important;
+	overflow-x: hidden;
+	padding-right: 20px;
+	border: 1px solid transparent;
+	font-size: 1.1em;
+	outline: none;
+}
+
+/*
+*	Print rules
+*/
+.emp-print-wrapper {
+	display: none;
+}
+
+
+
+
+
+
